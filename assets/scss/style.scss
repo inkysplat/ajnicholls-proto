@@ -1,0 +1,120 @@
+
+
+$color1: #BCBDAC;
+$color2: #3B2D38;
+$color3: #F27435;
+$color4: #CFBE27;
+
+$menuWidth: 200px;
+
+//F27435 -- orange
+//CFBE27 -- yellow
+//BCBDAC -- slate
+//F02475 -- pink
+//3B2D38 -- black
+
+.show-nav{
+  right: 0;
+  -webkit-transform: translateX(-$menuWidth);
+  transform: translateX(-$menuWidth);
+}
+
+body {
+  margin: 0;
+  background-color: $color1;
+  color: $color2;
+  overflow-x: hidden;
+  .canvas{
+    .wrapper{
+      position: relative;
+      top: 0;
+      bottom: 100%;
+      left: 0;
+      z-index: 1;
+      .left-col{
+        text-align: center;
+        box-sizing: border-box;
+        background: $color2;
+        color: $color1;
+        padding: 3%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        h1{
+          font-size: 5.8em;
+          color: $color3;
+        }
+        .profile{
+          border-radius: 200px;
+          border: 2px solid $color3;
+        }
+        .menu{
+          background: $color2;
+          color: $color3;
+          border:1px solid $color3;
+          font-size: 1.8em;
+          float: left;
+          border-radius: 12%;
+          z-index: 1;
+        }
+      }
+      .right-col{
+        box-sizing: border-box;
+        margin-left: 40%;
+        .content{
+          padding: 3%;
+        }
+      }
+    }
+    .navigation{
+      background: $color2;
+      color: $color3;
+      width: $menuWidth;
+      position: fixed;
+      top: 0;
+      height: 100%;
+      right: -$menuWidth;
+      z-index: 0;
+      .close-menu{
+        background: $color2;
+        color: $color3;
+        border:1px solid $color3;
+        font-size: 1.8em;
+        border-radius: 12%;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          display: block;
+          border: 0;
+          border-bottom: 1px solid $color1;
+          width: 100%;
+          text-align: center;
+          padding: 10% 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+    body{
+      .canvas{
+        .wrapper{
+          .left-col {
+              display: none;
+          }
+          .right-col {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Ubuntu', sans-serif;
+}

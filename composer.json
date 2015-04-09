@@ -1,0 +1,10 @@
+{
+    "name": "inkysplat/ajnicholls-proto",
+    "authors": [
+        {
+            "name": "Adam Nicholls",
+            "email": "inkysplat@gmail.com"
+        }
+    ],
+    "require": {}
+}
