@@ -4,7 +4,7 @@ A flat HTML design prototype for a new blog I'm working on to replace my WordPre
 
 This is build using;
 
-*Compass SASS
-*Gulp Task Runner
-*Bower Package Manager
+* Compass SASS
+* Gulp Task Runner
+* Bower Package Manager
 
